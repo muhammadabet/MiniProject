@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer base{
+    @font-face {
+        font-family: 'Outfit';
+        src: url(../assets/Outfit-VariableFont_wght.ttf);
+    }
+    html{
+        font-family: Outfit;
+    }
+}
