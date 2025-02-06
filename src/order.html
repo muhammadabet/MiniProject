@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Form Order</title>
+    <script>
+        function updateTotal() {
+            const pricePerItem = 12000;
+            const shippingCost = parseInt(document.getElementById("shipping").value);
+            const quantity = parseInt(document.getElementById("quantity").innerText);
+            const totalPrice = (pricePerItem * quantity) + shippingCost;
+            document.getElementById("totalPrice").innerText = `RP ${totalPrice.toLocaleString()}`;
+        }
+
+        function changeQuantity(amount) {
+            let quantityElem = document.getElementById("quantity");
+            let quantity = parseInt(quantityElem.innerText) + amount;
+            if (quantity < 1) quantity = 1;
+            quantityElem.innerText = quantity;
+            updateTotal();
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+  <nav class="z-20 relative py-9 px-4">
+    <div class="container bg-white mx-auto">
+      <div class="items-center flex justify-between">
+        <img src="../assets/KrustyBahari.png" alt="logo">
+        <div class="order-2 hidden lg:block">
+          <ul class="flex gap-16">
+            <li class="font-bold text-2xl"> <a href="index.html">Home</a></li>
+            <li class="font-bold text-2xl"> <a href="">About</a></li>
+            <li class="font-bold text-2xl"> <a href="menu.html">Menu</a></li>
+            <li class="font-bold text-2xl"> <a href="news.html">News</a></li>
+            <li class="font-bold text-2xl px-4 py-2 rounded-xl bg-yellow-400"> <a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-0 w-full right-0 left-0 bg-white p-4 lg:hidden">
+      <ul class="flex justify-between">
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1 text-blue-500">
+            <ion-icon name="home-outline" class="text-purple-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-purple-800 opacity-50 text-base font-bold">Home</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="help-circle-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">About</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="grid-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">Menu</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="newspaper-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">News</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="log-in-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">Login</span>
+          </button>  
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mx-auto flex items-center justify-center mt-16">
+    <div class="bg-gray-300 p-4 rounded-lg shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] w-80">
+        <div>
+            <h2 class="text-center text-xl font-bold mb-4">Online order</h2>
+            <form class="space-y-3">
+                <div>
+                    <label class="block font-semibold mb-2 mt-8 text-xl" for="name">Your name</label>
+                    <input type="text" id="name" class="w-full p-2 border rounded-lg bg-white">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-2 mt-8 text-xl" for="email">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border rounded-lg bg-white">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-2 mt-8 text-xl" for="phone">Phone</label>
+                    <input type="text" id="phone" class="w-full p-2 border rounded-lg bg-white">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-2 mt-8 text-xl" for="address">Address</label>
+                    <input type="text" id="address" class="w-full p-2 border rounded-lg bg-white">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-2 mt-8 text-xl" for="shipping">Shipping</label>
+                    <select id="shipping" class="w-full p-2 border rounded-lg bg-white text-xl" onchange="updateTotal()">
+                        <option value="9000">GOSEND (RP 9.000)</option>
+                        <option value="10000">JNE (RP 10.000)</option>
+                        <option value="8000">SiCepat (RP 8.000)</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="bg-black text-white p-4 rounded-lg shadow-md w-40 mb-2 mt-8">
+                <img src="https://via.placeholder.com/100" alt="Product" class="rounded-lg mb-2">
+                <p class="text-center">Tutut dewa</p>
+                <p class="text-center">⭐ 5.0</p>
+                <p class="text-center">Rp 12.000</p>
+                <div class="flex justify-center gap-2 mt-2">
+                    <button onclick="changeQuantity(-1)" class="bg-gray-700 text-white px-2 py-1 rounded">-</button>
+                    <span id="quantity">1</span>
+                    <button onclick="changeQuantity(1)" class="bg-gray-700 text-white px-2 py-1 rounded">+</button>
+                </div>
+            </div>
+            <div class="bg-white p-2 mb-2 mt-8 rounded-lg shadow-md flex justify-between w-40">
+                <span class="font-bold text-xl">TOTAL :</span>
+                <span id="totalPrice" class="font-bold text-xl"> RP 21.000</span>
+            </div>
+            <div class="flex justify-center mt-8">
+                <button class="font-bold text-xl px-4 py-2 rounded-xl bg-red-600"> <a href="">Cancel</a></button>
+                <button class="font-bold text-xl px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Next</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+        <div class="mt-20 container mx-auto">
+            <img src="../assets/object.png" alt="object">
+        </div>
+    </div>
+
+  </div>
+ 
+
+
+</body>
+</html>

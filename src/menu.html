@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Menu</title>
+</head>
+<body>
+    <!-- Navigation -->
+  <nav class="z-20 relative py-9 px-4">
+    <div class="container bg-white mx-auto">
+      <div class="items-center flex justify-between">
+        <img src="../assets/KrustyBahari.png" alt="logo">
+        <div class="order-2 hidden lg:block">
+          <ul class="flex gap-16">
+            <li class="font-bold text-2xl"> <a href="index.html">Home</a></li>
+            <li class="font-bold text-2xl"> <a href="">About</a></li>
+            <li class="font-bold text-2xl"> <a href="menu.html">Menu</a></li>
+            <li class="font-bold text-2xl"> <a href="news.html">News</a></li>
+            <li class="font-bold text-2xl px-4 py-2 rounded-xl bg-yellow-400"> <a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-0 w-full right-0 left-0 bg-white p-4 lg:hidden">
+      <ul class="flex justify-between">
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1 text-blue-500">
+            <ion-icon name="home-outline" class="text-purple-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-purple-800 opacity-50 text-base font-bold">Home</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="help-circle-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">About</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="grid-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">Menu</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="newspaper-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">News</span>
+          </button>  
+        </li>
+        <li>
+          <button class="flex justify-center flex-col items-center gap-1">
+            <ion-icon name="log-in-outline" class="text-gray-800 opacity-50 text-2xl"></ion-icon>
+            <span class="text-gray-800 opacity-50 text-base font-bold">Login</span>
+          </button>  
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold mb-8 text-center">
+        <span class="text-yellow-400 text-6xl">Baharians </span> <span class="text-6xl">Menu</span>
+    </h1>
+    <div class="grid grid-cols-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/udangsaustiram.jpeg" style="width: 322px; height: 214px;" alt="Udang saus tiram" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Udang saus tiram</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.1 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 45.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/kerangudang.jpeg" style="width: 322px; height: 214px;" alt="kerang udang" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Kerang Udang</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.1 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 50.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/kerangmutiara.jpg" style="width: 322px; height: 214px;" alt="kerang mutiara lemon" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Kerang mutiara lemon</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.8 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 62.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/tututdewa.jpg" style="width: 322px; height: 214px;" alt="tutut dewa" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Tutut dewa</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">5.0 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 12.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/udangkari.jpg" style="width: 322px; height: 214px;" alt="udang kari" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Udang kari</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">5.0 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 35.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/nilarica.jpg" style="width: 322px; height: 214px;" alt="nila rica-rica" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Nila rica-rica</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.9 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 35.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/pedakuahkari.jpg" style="width: 322px; height: 214px;" alt="Peda kuah kari" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Peda kuah kari</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.5 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 30.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu2.jpg" style="width: 322px; height: 214px;" alt="seblax" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Seblax</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">5.0 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 15.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu9.jpeg" style="width: 322px; height: 214px;" alt="kepiting kerang alaska" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Kepiting kerang alaska</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.1 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 80.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/udangselingkuh.jpg" style="width: 322px; height: 214px;" alt="Udang selingkuh" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Udang selingkuh</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.3 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 50.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu8.jpg" style="width: 322px; height: 214px;" alt="papeda kuah kuning" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Papeda kuah kuning</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.6 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 50.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu1.jpg" style="width: 322px; height: 214px;" alt="rendang dino" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Rendang dino galapagos</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.9 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 100.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/cobek.jpg" style="width: 322px; height: 214px;" alt="cobek nemo saus" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Cobek nemo saus tiram</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.2 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 30.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu7.jpg" style="width: 322px; height: 214px;" alt="mie gelas" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Mie gelas</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.9 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 10.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu16.jpg" style="width: 322px; height: 214px;" alt="roti jala" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Pari puni roti jala mak lima</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">5.0 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 15.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu6.jpg" style="width: 322px; height: 214px;" alt="nasi biryani" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Nasi biryani</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.9 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 48.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu15.jpg" style="width: 322px; height: 214px;" alt="soda tidak gembira" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Soda tidak gembira</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.4 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 10.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu14.jpe" style="width: 322px; height: 214px;" alt="chai" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Chai</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.4 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 12.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/escampur.png" style="width: 322px; height: 214px;" alt="es campur" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Es campur</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.9 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 10.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu13.png" style="width: 322px; height: 214px;" alt="kerak telor" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Kerak telor</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.3 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 15.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu12.jpg" style="width: 322px; height: 214px;" alt="Pepes ikan buntal" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Pepes ikan buntal</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.5 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 15.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu11.jpg" style="width: 322px; height: 214px;" alt="es cendol bahari" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Es cendol bahari</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.5 ★★★★★</p>
+            <p class="text-lg font-bold flex justify-center">Rp 10.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu10.jpg" style="width: 322px; height: 214px;" alt="Mie devil" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Mie devil</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.4 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 20.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl shadow-[-16px_20px_15px_rgba(0,0,0,0.5)] p-4 mb-8">
+            <img src="../assets/fammenu5.jpg" style="width: 322px; height: 214px;" alt="qebabs" class="rounded-xl mb-4">
+            <h2 class="flex justify-center text-xl font-semibold">Qebabs</h2>
+            <p class="text-yellow-500 text-lg flex justify-center">4.2 ★★★★☆</p>
+            <p class="text-lg font-bold flex justify-center">Rp 20.000</p>
+            <div class="flex justify-center mt-2">
+                <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400"> <a href="">Order</a></button>
+            </div>
+        </div>
+
+       
+    </div>
+    <div class="flex justify-center mt-16">
+        <button class="font-bold text-lg px-4 py-2 rounded-xl bg-yellow-400 shadow-[-16px_20px_15px_rgba(0,0,0,0.5)]"> <a href="">More</a></button>
+    </div>
+
+    <div>
+        <img src="../assets/object.png" alt="object">
+    </div>
+</div>
+
+
+</body>
+</html>
